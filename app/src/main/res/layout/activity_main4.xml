@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+
+    <EditText
+        android:id="@+id/inputNumber1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:hint="masukan angka 1 "
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/inputNumber2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:hint="masukan angka 2"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="@id/inputNumber1"
+        app:layout_constraintTop_toBottomOf="@id/inputNumber1"
+        />
+
+    <Button
+        android:id="@+id/buttonTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/inputNumber2"
+        app:layout_constraintTop_toBottomOf="@id/inputNumber2"
+        />
+
+    <Button
+        android:id="@+id/buttonKali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@id/buttonTambah"
+        app:layout_constraintTop_toBottomOf="@id/inputNumber2"
+        />
+
+    <Button
+        android:id="@+id/buttonBagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@id/buttonKali"
+        app:layout_constraintTop_toBottomOf="@id/inputNumber2"
+        />
+
+    <Button
+        android:id="@+id/buttonKurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="@id/inputNumber2"
+        app:layout_constraintTop_toBottomOf="@id/buttonTambah"
+        />
+
+    <Button
+        android:id="@+id/buttonMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@id/buttonKurang"
+        app:layout_constraintTop_toBottomOf="@id/buttonKali"
+        />
+
+
+    <TextView
+        android:id="@+id/hasilTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hasil Perhitungan : "
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonKurang"
+        />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hasilTitle"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
